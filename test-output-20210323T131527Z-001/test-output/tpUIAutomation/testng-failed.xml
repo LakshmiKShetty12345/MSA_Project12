@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [tpUIAutomation]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.reports.ReportListener"/>
+  </listeners>
+  <test thread-count="5" name="VerifyConcludeIdentityDataWithAPI(failed)">
+    <classes>
+      <class name="com.functional.testCases.VerifyConcludeIdentityData">
+        <methods>
+          <include name="VerifyConcludeRefAccountUsersDataWithAPI"/>
+          <include name="BeforeSuite"/>
+        </methods>
+      </class> <!-- com.functional.testCases.VerifyConcludeIdentityData -->
+    </classes>
+  </test> <!-- VerifyConcludeIdentityDataWithAPI(failed) -->
+</suite> <!-- Failed suite [tpUIAutomation] -->

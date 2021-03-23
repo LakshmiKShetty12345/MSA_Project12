@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [tpRestAPISuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.reports.ReportListener"/>
+  </listeners>
+  <test thread-count="5" name="VerifyEmail(failed)">
+    <classes>
+      <class name="com.api.testCases.VerifyEmailTestCase">
+        <methods>
+          <include name="VerifyEmail"/>
+          <include name="BeforeSuite"/>
+        </methods>
+      </class> <!-- com.api.testCases.VerifyEmailTestCase -->
+    </classes>
+  </test> <!-- VerifyEmail(failed) -->
+  <test thread-count="5" name="VerifyMasterData(failed)">
+    <classes>
+      <class name="com.api.testCases.VerifyUserMasterData">
+        <methods>
+          <include name="VerifyUserData"/>
+          <include name="BeforeSuite"/>
+        </methods>
+      </class> <!-- com.api.testCases.VerifyUserMasterData -->
+    </classes>
+  </test> <!-- VerifyMasterData(failed) -->
+</suite> <!-- Failed suite [tpRestAPISuite] -->
